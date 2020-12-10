@@ -1,0 +1,54 @@
+/* -----------------------Main each content--------------------- */
+main {
+    margin-top: 60px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+");
+    padding-right: .25rem;
+    margin-top: 7px;
+}
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: .25rem;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: black;
+    word-spacing: -3px;
+}
+.breadcrumb {
+    font-family: monospace;
+    padding-left: 3px;
+    background-color: white;
+    opacity: 0.6;
+}
+.smallPageEachTitle {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.authorText {
+    text-decoration: none !important; 
+    color: black; 
+    font-weight: bold;
+    font-size: 13px;
+}
+.authorText:hover, .breadcrumb a:hover {
+    color: #96cac6;
+}
+.smallPageEachImg img{
+    width: 100%;
+}
+.smallPageEachContent {
+    width: 100%; 
+    font-size: 15px;
+    overflow: hidden;
+    padding: 20px 0 0;
+    margin: 10px 0 0;
+    border-top: 1px dashed #ebebeb;
+}
+.mainText {
+    text-align: justify;
+}
+/* -------------------------------------- */

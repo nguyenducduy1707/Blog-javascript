@@ -34,7 +34,7 @@ main {
     font-weight: bold;
     font-size: 13px;
 }
-.authorText:hover, .breadcrumb a:hover {
+.authorText:hover, .breadcrumb a:hover, .suggestionsPictureAndContent a:hover {
     color: #96cac6;
 }
 .smallPageEachImg img{
@@ -52,3 +52,29 @@ main {
     text-align: justify;
 }
 /* -------------------------------------- */
+.suggestions {
+    margin: 0;
+    padding-bottom: 15px;
+}
+.suggestions .title-wrap {
+    font-size: 12px;
+    color: #96cac6;
+    background-color: #f8f8f8;
+    font-weight: 600;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.suggestionsPictureAndContent img {
+    width: 100%;
+    display: block;
+}
+.suggestionsPictureAndContent a{
+    font-weight: bold; 
+    text-decoration: none;
+    color: black;
+}
+.suggestionsPictureAndContent p{
+    font-family: monospace;
+    color: gray;
+}

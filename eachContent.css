@@ -18,8 +18,10 @@ main {
 .breadcrumb {
     font-family: monospace;
     padding-left: 3px;
+    padding-top: 0px;
     background-color: white;
     opacity: 0.6;
+    margin-bottom: 0px;
 }
 .smallPageEachTitle {
     font-weight: bold;
@@ -77,4 +79,8 @@ main {
 .suggestionsPictureAndContent p{
     font-family: monospace;
     color: gray;
+}
+
+.sugesstionContent {
+    font-size: 13px;
 }

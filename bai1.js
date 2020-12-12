@@ -19,3 +19,24 @@ for(let i=1; i < dataCodeForEveryOne.length && i < 4; i++) {
         </div>
     `
 };
+ // Random maybe you like
+var res = dataCodeForEveryOne.sort(function() {
+    return 0.5 - Math.random();
+});
+let randomPost = res.slice(dataCodeForEveryOne,3)
+let maybeYouLikePosts = document.getElementsByClassName("maybe-you-like-posts")[0]
+for(let i = 0; i < 3; i++) {
+    maybeYouLikePosts.innerHTML += `
+        <div class="row content-in-recent-posts">
+            <div class="col-4 img-on-recent-posts-content">
+                <a href="${randomPost[i].link}">
+                    <img src="${randomPost[i].img}" alt="">          
+                </a>
+            </div>
+            <div class="col-8">
+                <a class="title-in-footer-posts" href="${randomPost[i].link}">${randomPost[i].title}</a>
+                <p class="post-date">${randomPost[i].date}</p>
+            </div>
+        </div>
+        `
+}

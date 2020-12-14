@@ -24,6 +24,7 @@ var res = dataCodeForEveryOne.sort(function() {
     return 0.5 - Math.random();
 });
 let randomPost = res.slice(dataCodeForEveryOne,3)
+console.log(dataCodeForEveryOne)
 let maybeYouLikePosts = document.getElementsByClassName("maybe-you-like-posts")[0]
 for(let i = 0; i < 3; i++) {
     maybeYouLikePosts.innerHTML += `

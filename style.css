@@ -80,7 +80,16 @@ main {
     box-shadow: 0 0 5px rgba(0,0,0,.1);
     background-color: #fff;
 }
-
+.navbar, .navbar-toggler-icon, .navbar-brand {
+    font-size: 14px !important;
+    font-weight: bold;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+.navbar-toggler {
+    border: none;
+}
 /* ------------------------------------Left side content------------------------- */
 .eachContent {
     margin-bottom: 50px;
@@ -396,17 +405,23 @@ main {
     font-size: 12px;
     margin: 0px;
     padding: 0px 0px 20px 0px;
-}
-.widget-content a {
     position: relative;
-    float: right;
-    padding-left: 15px;
-    color: white;
 }
 .widget-content {
+    display: inline-block;
+}
+.widget-content a {
+    padding-left: 15px;
+    color: white;
+    float: right;
+}
+.widget-content {
+    position: absolute;
     padding-right: 0px !important;
+    right: 0;
 }
 .copyright-area {
+    display: inline-block;
     padding-left: 0px !important;
 }
 /* --------Back to top button------- */

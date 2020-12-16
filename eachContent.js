@@ -1,3 +1,4 @@
+// Scroll to top button
 $(window).scroll(function() {
     $('.back-to-top').toggleClass('scrolled', $(this).scrollTop() > 100);
 });
@@ -93,8 +94,6 @@ let dataCodeForEveryOne = [
         link : "bai10.html"       
     },
 ]
-// Data each page
-
 // Popular post
 let popularPosts = document.getElementById("popularPosts");
 for(let i=0; i < dataCodeForEveryOne.length && i < 3; i++) {
@@ -129,3 +128,11 @@ for(let i=0; i < dataCodeForEveryOne.length && i < 3; i++) {
     </div>
     `
 }
+// Navbar
+let listOfCodeForEveryOne = document.getElementsByClassName("list-of-code-for-everyone")[0];
+    for (x of dataCodeForEveryOne) {
+        listOfCodeForEveryOne.innerHTML += `
+            <a class="dropdown-item" href="#">${x.title}</a>
+            <div class="dropdown-divider"></div>
+        `
+    }

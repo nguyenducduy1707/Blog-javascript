@@ -1,3 +1,4 @@
+
 /* -----------------------Main each content--------------------- */
 main {
     margin-top: 60px;
@@ -51,7 +52,27 @@ main {
     border-top: 1px dashed #ebebeb;
 }
 .mainText {
-    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mainText {
+    color: #656565;
+}
+.mainText .ex {
+    display: block;
+}
+.mainText p .title {
+    font-size: 18px;
+    display: block;
+}
+.mainText a {
+    color: #96cac6 !important;
+}
+.jsKeywordColor {
+    color: mediumblue;
+}
+.jsStringColor {
+    color: brown;
 }
 /* -------------------------------------- */
 .suggestions {

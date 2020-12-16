@@ -80,15 +80,77 @@ main {
     box-shadow: 0 0 5px rgba(0,0,0,.1);
     background-color: #fff;
 }
-.navbar, .navbar-toggler-icon, .navbar-brand {
+.navbar, .navbar-toggler-icon, .navbar-brand , .navbar button{
     font-size: 14px !important;
     font-weight: bold;
+}
+.navbar-brand {
+    color: rgb(253,195,6) !important;
 }
 .navbar-toggler:focus {
     outline: none;
 }
 .navbar-toggler {
     border: none;
+}
+.dropdown-item:hover {
+    color: #96cac6 !important;
+    background-color: black;
+}
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.5s !important;
+    transition: all 0.5s !important;
+    overflow: hidden;
+    -webkit-transform-origin: top center !important;
+            transform-origin: top center !important;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    display: block;
+}      
+.dropdown:hover .dropdown-menu {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.list-of-code-for-everyone {
+    background-color: black;
+}
+.list-of-code-for-everyone .dropdown-item {
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+}
+.dropdown-divider {
+    opacity: 0.1;
+}
+#myInputSearch:focus, .navbar #btnSearch:focus {
+    border-color: rgb(253,195,6);
+    outline: 0;
+    box-shadow: 0 0 0 0.05rem rgb(253,195,6);
+}
+.navbar #btnSearch:hover {
+    background-color: rgb(253,195,6, 1);
+}
+pre {
+    background-color: #f1f2f3;
+    border: 1px solid #e5e5e5;
+    margin: 0.5em 0 1em 0;
+    padding: 0 1em 0 1em;
+    overflow: auto;
+    border-radius: 3px
+}
+code {
+    font-size: 100%;
+}
+.token.tag > .token.tag {
+    color: #22863a;
+}
+.token.tag > .token.attr-name {
+    color: #6f42c1;
+}
+.token.comment {
+    color: #6a737d;
 }
 /* ------------------------------------Left side content------------------------- */
 .eachContent {
@@ -109,6 +171,7 @@ main {
     height: 1px;
     background-color: #333;
     flex-grow: 1;
+    
 }
 .text-divider::before {
     margin-right: var(--text-divider-gap);
@@ -150,6 +213,10 @@ main {
 .contentOfBlog .linkFromButton .btnContent:hover {
     background-color: black;
 }
+.contentOfBlog .linkFromButton .btnContent:focus {
+    border-color: #96cac6;
+    box-shadow: 0 0 0 0.05rem #96cac6;
+}
 .contentOfBlog p{
     margin-bottom: 3rem;
     overflow: hidden;
@@ -177,6 +244,9 @@ main {
     line-height: 28px;
     text-transform: uppercase;
     text-align: center;
+}
+.social-plugin {
+    margin-top: 10px;
 }
 .social-plugin .fa {
     padding: 14px;
@@ -248,7 +318,7 @@ main {
     margin-right: 2px;
 }
 .categories {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .categories .list-group-item {
     border-top: none;
@@ -294,6 +364,10 @@ main {
 .tags a:hover {
     background-color: #96cac6;
     color: white;
+}
+/* ------About me on right side-------- */
+.about-me {
+    margin-top: 10px;
 }
 /* --------------------------------------------Footer----------------------------------- */
 .footerOfThePage {
@@ -423,6 +497,9 @@ main {
 .copyright-area {
     display: inline-block;
     padding-left: 0px !important;
+}
+.copyright-area a {
+    color: #96cac6;
 }
 /* --------Back to top button------- */
 .back-to-top.scrolled {

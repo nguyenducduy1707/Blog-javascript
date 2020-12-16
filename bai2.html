@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="comment-fb">
+    <!-- <div class="comment-fb">
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0&appId=3385926808142461&autoLogAppEvents=1" nonce="u5lXZyKn"></script>
         <script>
@@ -23,7 +23,7 @@
             };
         </script>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-    </div>
+    </div> -->
     
     <div class="wrapper">
         <header>
@@ -49,65 +49,266 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
+                    <ul class="navbar-nav mr-auto">                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Code for every one
+                            </a>
+                            <div class="dropdown-menu list-of-code-for-everyone" aria-labelledby="navbarDropdown">
+                                <!-- list-of-code-for-everyone -->
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">About me <span class="sr-only">(current)</span></a>
+                        </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <form class="form-inline my-2 my-lg-0" autocomplete="off">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="myInputSearch">
+                        <button class="btn my-2 my-sm-0" type="button" id="btnSearch">Search</button>
                     </form>
                 </div>
             </nav>
         </header>
-        <main id="bai1">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item"><a href="index.html">Code For Everyone</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Bài 1</li>
-                </ol>
-            </nav>
-            <div class="smallPageEachTitle" id="titleBai2"></div>
-            <a class="authorText" href="#">Nguyen Duc Duy</a>
-            <div class="smallPageEachContent">
-                <div class="smallPageEachImg" id="imgBai2"></div>
-                <div class="mainText">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, alias officiis! Mollitia optio illo ducimus quisquam ab officia dolor, quod similique ad, nisi sit natus aliquid odit explicabo! Ad, vitae.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, alias officiis! Mollitia optio illo ducimus quisquam ab officia dolor, quod similique ad, nisi sit natus aliquid odit explicabo! Ad, vitae.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tenetur eius ea quo iusto cum vel, ipsam alias eum quibusdam nesciunt quia, ex fugit architecto, fugiat odio debitis rennnnnnnnnnnnnnncusandae magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci in, ex nobis provident cumque similique iusto modi nam illum commodi rem quasi et iste quos pariatur, minima optio sunt!</p>
-                </div>   
-            </div>
-            <div class="suggestions">
-                <p class="title-wrap">You may like this post</p>
-                <div class="suggestionsPictureAndContent row" id="suggestionsPictureAndContent2">
-                    <!-- Suggestion picture and content is here -->
+        <main>
+            <div class="row">
+                <!-- Left side content -->
+                <div class="col-md-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                          <li class="breadcrumb-item"><a href="index.html">Code For Everyone</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Bài 2</li>
+                        </ol>
+                    </nav>
+                    <div class="smallPageEachTitle" id="titleBai2"></div>
+                    <a class="authorText" href="#">Nguyen Duc Duy</a>
+                    <div class="smallPageEachContent">
+                        <div class="smallPageEachImg" id="imgBai2">
+                            <!-- Img page 1 here -->
+                        </div>
+                        <!-- The main content of page 1 here -->
+                        <div class="mainText">
+                            <p><strong class="title">1. Link bài tập</strong> <a target="blank" href="https://docs.google.com/document/d/108LAZd88EzGmQwNKtZ-4XJTzf5sMFL1Pr1vu4bf_k00/edit?fbclid=IwAR1UXD3zDHi9oeCjZPi0kunbZVnUI2Jo8qk7YRnCq7DWUsPDmhM5oXwVbGo">https://docs.google.com/document/d/108LAZd88EzGmQwNKtZ-4XJTzf5sMFL1Pr1vu4bf_k00/edit?fbclid=IwAR1UXD3zDHi9oeCjZPi0kunbZVnUI2Jo8qk7YRnCq7DWUsPDmhM5oXwVbGo</a></p>
+                            <p><strong class="title">2. Giải đề</strong></p>
+                            <!-- Bài 1 -->
+                            <span class="ex"><strong>Bài 1 :</strong></span>
+                            1. <strong>Boolean</strong> là loại dữ liệu logic chỉ có giá trị true/đúng hoặc false/sai.
+                            <pre>
+console.log(Boolean(10>11)) 
+<span class="token comment">// Expected : false</span>
+console.log(9 < 10)
+<span class="token comment">// // Expected : true</span>
+console.log(5 == 6)
+<span class="token comment">// // Expected : false</span>
+</pre>
+                            2. <strong>Flow chart</strong> là một dạng biểu đồ được hay được sử dụng để trình bày những bước ở trong một quy trình nào đó.
+                            3. nested conditionals là câu điều kiện lồng nhau
+                            <pre>
+<span class="jsKeywordColor">let</span> diem = Number(prompt("Enter a number"))
+<span class="jsKeywordColor">if</span> (diem < 4) {
+console.log("Hoc lai")
+} <span class="jsKeywordColor">else if</span> (diem >= 4 && diem < 5.5) {
+    console.log("Diem D")
+} <span class="jsKeywordColor">else</span> {
+    <span class="jsKeywordColor">if</span> (diem >= 5.5 && diem < 7) {
+        console.log("Loai C")
+    } <span class="jsKeywordColor">else</span> {
+        <span class="jsKeywordColor">if</span> (diem >= 7 && diem < 8.5) {
+            console.log("Loai B")
+        } <span class="jsKeywordColor">else</span> {
+            <span class="jsKeywordColor">if</span> (diem >= 8.5 && diem <= 10) {
+                console.log("Loai A")
+            } <span class="jsKeywordColor">else</span> {
+                console.log("Diem khong hop le")
+            }
+        }
+    }
+}
+</pre>
+                            <br>
+                            <br>
+                            <!-- Bài 2 -->
+                            <span class="ex"><strong>Bài 2 :</strong></span>
+                            <pre>
+<span class="jsKeywordColor">let</span> radiusOfCircle = Number(prompt("<span class="jsStringColor">Hello, please enter the radius of circle you want to calculate the area ?"</span>)) ;
+<span class="jsKeywordColor">let</span> areaOFCircle = radiusOfCircle * radiusOfCircle * 3.14 ;
+alert(`The area = ${areaOFCircle.toFixed(1)}`)
+<span class="token comment">// Expected : input = 10, output => The area = 314.0</span></pre>
+                            <br>
+                            <!-- Bài 3 -->
+                            <p><strong>Bài 3 :</strong></p>
+                            <pre>
+<span class="jsKeywordColor">let</span> tempInCelsius = Number(prompt(<span class="jsStringColor">"Enter the temperature in Celsius?"</span>)) ;
+<span class="jsKeywordColor">let</span> result = tempInCelsius * 1.8 + 32 ;
+alert(`${tempInCelsius} (C) = ${result.toFixed(1)} (F)`)
+<span class="token comment">// Expected : input = 10, output => 10 (C) = 50.0 (F)</span></pre>
+                            <br>
+                            <!-- Bài 4 -->
+                            <p><strong>Bài 4 :</strong></p>
+                            <em>A square</em>
+                            <pre>
+clear() ;
+<span class="jsKeywordColor">for</span> ( i = 0 ; i < 4 ; i++ ) {
+    fd(100)
+    rt(90)
+} ;</pre>
+                            <em>An equilateral triangle</em>
+                            <pre>
+clear()
+rt(30)
+fd(100)
+<span class="jsKeywordColor">for</span> ( i = 0; i < 2 ; i++ ) {
+    rt(120)
+    fd(100)
+} ;
+</pre>
+                            <em>A circle</em>
+                            <pre>
+clear() ;
+<span class="jsKeywordColor">for</span> ( i = 0 ; i < 200 ; i++ ) {
+fd(5)
+rt(Math.PI)
+} ;
+</pre>
+                            <em>Multi-circles</em>
+                            <pre>
+clear()
+<span class="jsKeywordColor">for</span> ( i = 0 ; i < 200 ; i++ ) {
+    fd(3)
+    rt(Math.PI)
+}
+<span class="jsKeywordColor">for</span> ( let j = 0; j < 5 ; j ++ ) {
+rt(61)
+<span class="jsKeywordColor">for</span> ( i = 0 ; i < 229 ; i++ ) {
+    fd(3)
+    rt(Math.PI)
+}
+} ;
+</pre>
+                            <em>Multi-circles ( More difficult )</em>
+                            <pre>
+clear()
+<span class="jsKeywordColor">for</span> ( i = 0 ; i < 200 ; i++ ) {
+    fd(3)
+    rt(Math.PI)
+}
+<span class="jsKeywordColor">for</span> ( let j = 0; j < 37 ; j ++ ) {
+    rt(10)
+    <span class="jsKeywordColor">for</span> ( i = 0 ; i < 229 ; i++ ) {
+        fd(3)
+        rt(Math.PI)
+    }
+}                                
+</pre>
+                            <pre>
+<span class="token comment">&lt;!-- Latest compiled and minified CSS --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- jQuery library --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Popper JS --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Latest compiled JavaScript --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+                            </pre>
+                        </div>
+                        <!------------------------------------>
+                    </div>
+                    <div class="suggestions">
+                        <p class="title-wrap">You may like this post</p>
+                        <div class="suggestionsPictureAndContent row" id="suggestionsPictureAndContent2">
+                            <!-- Suggestion picture and content is here -->
+                        </div>
+                        <p class="title-wrap">Post a comment</p>
+                        <div class="fb-comments" data-href="https://nguyenducduy1707.github.io/Blog-javascript/bai1.html" data-numposts="5" data-width="100%"></div>
+                    </div>
                 </div>
-                <p class="title-wrap">Post a comment</p>
-                <div class="fb-comments" data-href="https://nguyenducduy1707.github.io/Blog-javascript/bai2.html" data-numposts="5" data-width="100%"></div>
+                <!-- Right side content -->
+                <div class="col-md-4 right-content sticky-top">
+                    <div class="social-plugin">
+                        <p class="title-on-right-content">Social plugin</p>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>                       
+                    </div>
+                    <div class="popular-posts" id="popularPosts">
+                        <p class="title-on-right-content">Popular Post</p>
+                        <!-- Content popular post here -->
+                    </div>
+                    <div class="categories">
+                        <p class="title-on-right-content">Categories</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="index.html" class="eachCategories">Code for everyone</a>
+                                <span class="label-categories-count">5</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <p class="title-on-right-content">Tags</p>
+                        <a class="btn" href="#" role="button">Html</a>
+                        <a class="btn" href="#" role="button">Js</a>
+                        <a class="btn" href="#" role="button">Css</a>                    
+                    </div>
+                </div>               
             </div>
         </main>
-        <footer class="footerOfThePage">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md">RECENT POST</div>
-                    <div class="col-md">CATEGORIES</div>
-                    <div class="col-md">TAGS</div>
+        <footer class="footerOfThePage container">
+            <div class="row">
+                <div class="col-md recent-posts">
+                    <div class="title-of-footer-row">Recent posts</div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                
+                    <!-- Recent posts here -->
+                </div>
+                <div class="col-md middle-column-posts">
+                    <div class="title-of-footer-row">Categories</div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <ul class="list-group categories-content">
+                        <li class="list-group-item list-group-item-in-categories-footer">
+                            <a href="index.html">Code for everyone</a>
+                            <span class="label-categories-count-in-footer">5</span>
+                        </li>
+                        <li class="list-group-item list-group-item-in-categories-footer">
+                            <a href="">Code Intensive (upcoming)</a>
+                            <span class="label-categories-count-in-footer">0</span>
+                        </li>
+                    </ul>
+                    <div class="tags-in-footer">
+                        <div class="title-of-footer-row">Tags</div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="tags-content">
+                            <a class="btn" href="" role="button">Html</a>
+                            <a class="btn" href="" role="button">Js</a>
+                            <a class="btn" href="" role="button">Css</a>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md maybe-you-like-posts">
+                    <div class="title-of-footer-row">Maybe you like</div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <!-- Maybe you like random post here -->
+                </div>
+            </div>
+            <div class="container-fluid row end-of-footer">
+                <div class="col-md-8 copyright-area ">
+                    <div>Based on <a href="https://elegance-way2themes.blogspot.com/" target="blank">https://elegance-way2themes.blogspot.com/</a></div>
+                </div>
+                <div class="col-md-4 widget-content">
+                    <a href="https://www.facebook.com/ducduy.nguyen.7505/" target="blank">Contact me</a>
+                    <a href="">About</a>
+                    <a href="">Home</a>
                 </div>
             </div>
         </footer>

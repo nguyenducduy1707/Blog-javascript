@@ -1,4 +1,4 @@
-//
+// scroll to top button
 $(window).scroll(function() {
     $('.back-to-top').toggleClass('scrolled', $(this).scrollTop() > 100);
 });
@@ -19,8 +19,12 @@ responsiveWindow();
 $(window).resize(function() {
     responsiveWindow();
 })
-// Data home page
-let dataCodeForEveryOne = [
+// Data code for every one home page
+// searchingInput
+let mainContent = document.getElementById("mainContent");
+let leftSideContent = document.getElementById("left-side-content")
+let myInputSearch = document.getElementById("myInputSearch");
+dataCodeForEveryOne = [
     {
         date : "December 9, 2020",
         img : "https://2.bp.blogspot.com/-vlEsQFjiSKk/VupYFIU67qI/AAAAAAAADWs/AJbQSsLgu0cAGn1mbyFzTrXnExTodbCAQ/w680/guitar-1139397_960_720.jpg",
@@ -94,30 +98,69 @@ let dataCodeForEveryOne = [
         link : "bai10.html"       
     },
 ]
-let mainContent = document.getElementById("mainContent");
-for(let i = 0; i < dataCodeForEveryOne.length; i++) {
-    mainContent.innerHTML += `
-    <div class="row eachContent">
-        <div class="col-md-5 imageOfContent">
-            <div class="text-divider">${dataCodeForEveryOne[i].date}</div>
-            <div class="mainImg">
-                <a href ="${dataCodeForEveryOne[i].link}">
-                    <img src="${dataCodeForEveryOne[i].img}" alt="">                
+let btnSearch = document.getElementById("btnSearch")
+myInputSearch.onkeyup = function (e) {
+    let searchString = e.target.value.toLowerCase();
+    let filteredPosts = dataCodeForEveryOne.filter((eachPost) => {
+        return eachPost.title.toLowerCase().includes(searchString)
+    })
+    if(myInputSearch.value) {
+        btnSearch.onclick = function() {          
+            if(filteredPosts.length != 0) {
+                displayMainContent(filteredPosts)
+                console.log(filteredPosts)
+            } else {
+                leftSideContent.innerHTML = `
+                <div style="background-color: #f2f2f2 ; padding : 12px ; font-size:13px ; font-weight : 400">
+                    There are no results found for "${myInputSearch.value.bold()}"               
+                </div>
+                `           
+            }
+        }
+    }
+}
+// Display all data
+let displayMainContent = (posts) => {
+    let htmlMainContent = posts
+    .map((post) => {
+        return `
+        <div class="row eachContent">
+            <div class="col-md-5 imageOfContent">
+                <div class="text-divider">${post.date}</div>
+                <div class="mainImg">
+                    <a href ="${post.link}">
+                        <img src="${post.img}" alt="">                
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-7 contentOfBlog">
+                <div>
+                    <a class="linkFromTitle" href="#">${post.title}</a>
+                    <p>${post.overView}</p>
+                </div>
+                <a class="linkFromButton">
+                    <button type="button" class="btn btnContent">Read more...</button>            
                 </a>
             </div>
         </div>
-        <div class="col-md-7 contentOfBlog">
-            <div>
-                <a class="linkFromTitle" href="#">${dataCodeForEveryOne[i].title}</a>
-                <p>${dataCodeForEveryOne[i].overView}</p>
-            </div>
-            <a class="linkFromButton">
-                <button type="button" class="btn btnContent">Read more...</button>            
-            </a>
-        </div>
-    </div>
+        `
+    })
+    .join("");
+    leftSideContent.innerHTML = `
+        <div class="mainContent container-fluid" id="mainContent">
+            ${htmlMainContent}
+        </div> 
     `
 }
+displayMainContent(dataCodeForEveryOne)
+// Navbar
+    let listOfCodeForEveryOne = document.getElementsByClassName("list-of-code-for-everyone")[0];
+    for (x of dataCodeForEveryOne) {
+        listOfCodeForEveryOne.innerHTML += `
+            <a class="dropdown-item" href="#">${x.title}</a>
+            <div class="dropdown-divider"></div>
+        `
+    }
 // Popular post
 let popularPosts = document.getElementById("popularPosts");
 for(let i=0; i < dataCodeForEveryOne.length && i < 3; i++) {
@@ -174,4 +217,5 @@ for(let i = 0; i < randomPost.length; i++) {
         </div>
         `
 }
+
 

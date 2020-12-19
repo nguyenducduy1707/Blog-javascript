@@ -108,7 +108,6 @@ myInputSearch.onkeyup = function (e) {
         btnSearch.onclick = function() {          
             if(filteredPosts.length != 0) {
                 displayMainContent(filteredPosts)
-                console.log(filteredPosts)
             } else {
                 leftSideContent.innerHTML = `
                 <div style="background-color: #f2f2f2 ; padding : 12px ; font-size:13px ; font-weight : 400">
@@ -116,6 +115,10 @@ myInputSearch.onkeyup = function (e) {
                 </div>
                 `           
             }
+        }
+        if(e.keyCode === 13) {
+            e.preventDefault();
+            btnSearch.click()
         }
     }
 }

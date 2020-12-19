@@ -90,50 +90,98 @@
                         <div class="mainText">
                             <p><strong class="title">1. Link bài tập</strong> <a target="blank" href="https://docs.google.com/document/d/108LAZd88EzGmQwNKtZ-4XJTzf5sMFL1Pr1vu4bf_k00/edit?fbclid=IwAR1UXD3zDHi9oeCjZPi0kunbZVnUI2Jo8qk7YRnCq7DWUsPDmhM5oXwVbGo">https://docs.google.com/document/d/108LAZd88EzGmQwNKtZ-4XJTzf5sMFL1Pr1vu4bf_k00/edit?fbclid=IwAR1UXD3zDHi9oeCjZPi0kunbZVnUI2Jo8qk7YRnCq7DWUsPDmhM5oXwVbGo</a></p>
                             <p><strong class="title">2. Giải đề</strong></p>
-                            <!-- Bài 1 -->
-                            <span class="ex"><strong>Bài 1 :</strong></span>
+                            <!-- Answer the following questions : -->
+                            <span class="ex"><strong>Answer the following questions :</strong></span>
                             1. <strong>Boolean</strong> là loại dữ liệu logic chỉ có giá trị true/đúng hoặc false/sai.
                             <pre>
-console.log(Boolean(10>11)) 
+console.log(Boolean(10 > 11)) 
 <span class="token comment">// Expected : false</span>
 console.log(9 < 10)
-<span class="token comment">// // Expected : true</span>
+<span class="token comment">// Expected : true</span>
 console.log(5 == 6)
-<span class="token comment">// // Expected : false</span>
+<span class="token comment">// Expected : false</span>
 </pre>
-                            2. <strong>Flow chart</strong> là một dạng biểu đồ được hay được sử dụng để trình bày những bước ở trong một quy trình nào đó.
-                            3. nested conditionals là câu điều kiện lồng nhau
+                            <p>2. <strong>Flow chart</strong> là một dạng biểu đồ được hay được sử dụng để trình bày những bước ở trong một quy trình nào đó.</p>
+                            3. <strong>Nested conditionals</strong> là câu điều kiện lồng nhau
+                            
                             <pre>
-<span class="jsKeywordColor">let</span> diem = Number(prompt("Enter a number"))
+<span class="jsKeywordColor">let</span> diem = Number(prompt(<span class="jsStringColor">"Enter your score"</span>))
 <span class="jsKeywordColor">if</span> (diem < 4) {
-console.log("Hoc lai")
+console.log(<span class="jsStringColor">"Học lại"</span>)
 } <span class="jsKeywordColor">else if</span> (diem >= 4 && diem < 5.5) {
-    console.log("Diem D")
+    console.log(<span class="jsStringColor">"Điểm D"</span>)
 } <span class="jsKeywordColor">else</span> {
     <span class="jsKeywordColor">if</span> (diem >= 5.5 && diem < 7) {
-        console.log("Loai C")
+        console.log(<span class="jsStringColor">"Loại C"</span>)
     } <span class="jsKeywordColor">else</span> {
         <span class="jsKeywordColor">if</span> (diem >= 7 && diem < 8.5) {
-            console.log("Loai B")
+            console.log(<span class="jsStringColor">"Loại B"</span>)
         } <span class="jsKeywordColor">else</span> {
             <span class="jsKeywordColor">if</span> (diem >= 8.5 && diem <= 10) {
-                console.log("Loai A")
+                console.log(<span class="jsStringColor">"Loại A"</span>)
             } <span class="jsKeywordColor">else</span> {
-                console.log("Diem khong hop le")
+                console.log(<span class="jsStringColor">"Điểm không hợp lệ"</span>)
             }
         }
     }
 }
 </pre>
-                            <br>
-                            <br>
-                            <!-- Bài 2 -->
-                            <span class="ex"><strong>Bài 2 :</strong></span>
+                            <p>4. Using <strong>Python turtle</strong> to draw the following shapes:</p>
+                            <em>Shape 1</em>
                             <pre>
-<span class="jsKeywordColor">let</span> radiusOfCircle = Number(prompt("<span class="jsStringColor">Hello, please enter the radius of circle you want to calculate the area ?"</span>)) ;
-<span class="jsKeywordColor">let</span> areaOFCircle = radiusOfCircle * radiusOfCircle * 3.14 ;
-alert(`The area = ${areaOFCircle.toFixed(1)}`)
-<span class="token comment">// Expected : input = 10, output => The area = 314.0</span></pre>
+clear()
+<span class="jsKeywordColor">for</span> (let i = 0; i < 4; i++) {
+    rt(30)
+    fd(70)
+    lt(60)
+    fd(70)
+    lt(120)
+    fd(70)
+    lt(60)
+    fd(70)
+    rt(120)
+}
+</pre>
+                            <em>Shape 2</em>
+                            <pre>
+clear()
+lt(90)
+<span class="jsKeywordColor">for</span> (let i=0; i < 3; i++) {
+    fd(70)
+    rt(360 / 3)
+}
+<span class="jsKeywordColor">for</span> (let i=0; i < 4; i++) {
+    fd(70)
+    rt(360 / 4)
+}
+<span class="jsKeywordColor">for</span> (let i=0; i < 5; i++) {
+    fd(70)
+    rt(360 / 5)
+}
+<span class="jsKeywordColor">for</span> (let i=0; i < 6; i++) {
+    fd(70)
+    rt(360 / 6)
+}
+</pre>
+                            <br>
+                            <!-- Bài 1 -->
+                            <span class="ex"><strong>Bài 1 : BMI exercise</strong></span>
+                            <pre>
+<span class="jsKeywordColor">let</span> height = Number(prompt(<span class="jsStringColor">"Enter your height (m)"</span>))
+<span class="jsKeywordColor">let</span> weight = Number(prompt(<span class="jsStringColor">"Enter your weight (kg)"</span>))
+<span class="jsKeywordColor">let</span> BMI = weight / (height * height)
+<span class="jsKeywordColor">if</span> (BMI < 18.5) {
+    alert(`Your BMI is ${BMI} and You are underweight`)
+} <span class="jsKeywordColor">else if</span> (BMI > 18.5 && BMI < 24.9) {
+    alert(`Your BMI is ${BMI} and you are normal`)
+} <span class="jsKeywordColor">else if</span> (BMI > 25 && BMI < 29.9) {
+    alert(`Your BMI is ${BMI} and you are overweight`)
+} <span class="jsKeywordColor">else if</span> (BMI > 30 && BMI < 34.9) {
+    alert(`Your BMI is ${BMI} and you are obese`)
+} <span class="jsKeywordColor">else</span> {
+    alert(`Your BMI is ${BMI} and you are extreme obese`)
+}
+</pre>
                             <br>
                             <!-- Bài 3 -->
                             <p><strong>Bài 3 :</strong></p>
